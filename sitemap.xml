@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gessulat.github.io/blog/posts/test_jupyter/test_jupyter.html</loc>
-    <lastmod>2025-02-07T18:08:25.786Z</lastmod>
+    <loc>https://gessulat.github.io/blog/posts/hello_world/index.html</loc>
+    <lastmod>2025-02-07T19:50:35.295Z</lastmod>
   </url>
   <url>
     <loc>https://gessulat.github.io/blog/index.html</loc>
-    <lastmod>2025-02-07T18:08:25.786Z</lastmod>
+    <lastmod>2025-02-07T19:50:35.295Z</lastmod>
   </url>
   <url>
     <loc>https://gessulat.github.io/blog/about.html</loc>
-    <lastmod>2025-02-07T18:08:25.786Z</lastmod>
+    <lastmod>2025-02-07T19:50:35.295Z</lastmod>
   </url>
   <url>
-    <loc>https://gessulat.github.io/blog/posts/hello_world/index.html</loc>
-    <lastmod>2025-02-07T18:08:25.786Z</lastmod>
+    <loc>https://gessulat.github.io/blog/posts/tufte_rangeplot/tufte_rangeplot.html</loc>
+    <lastmod>2025-02-07T19:50:35.296Z</lastmod>
   </url>
 </urlset>
