@@ -1,0 +1,20 @@
+project:
+  title: "Siegfried Gessulat's blog"
+  type: website
+
+website:
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/gessulat
+format:
+  html:
+    theme: zephyr
+    css: styles.css
+
+execute:
+  freeze: auto
+
+
+

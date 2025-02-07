@@ -1,0 +1,9 @@
+---
+title: "Hello world"
+author: "Siegfried Gessulat"
+date: "2025-02-07"
+categories: []
+draft: false
+---
+
+Lorem Ipsum.

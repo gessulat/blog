@@ -1,0 +1,18 @@
+---
+title: "About"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/siegfried-gessulat/
+    - icon: github
+      text: Github
+      href: https://github.com/gessulat
+
+---
+
+## Publications
+
+__[Google Scholar Profile](https://scholar.google.com/citations?user=cXplLrgAAAAJ&hl=en)__
