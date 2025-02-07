@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "posts/hello_world/index.html",
+    "href": "posts/hello_world/index.html",
+    "title": "Hello world",
+    "section": "",
+    "text": "Lorem Ipsum."
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -12,13 +19,6 @@
     "title": "About",
     "section": "",
     "text": "Google Scholar Profile"
-  },
-  {
-    "objectID": "posts/hello_world/index.html",
-    "href": "posts/hello_world/index.html",
-    "title": "Hello world",
-    "section": "",
-    "text": "Lorem Ipsum."
   },
   {
     "objectID": "index.html",
