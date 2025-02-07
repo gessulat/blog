@@ -2,7 +2,6 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/hello_world/index.html",
       "/posts/tufte_rangeplot/tufte_rangeplot.html"
     ]
   }
