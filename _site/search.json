@@ -25,6 +25,13 @@
     "href": "index.html",
     "title": "Siegfried Gessulat's blog",
     "section": "",
-    "text": "Hello world\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Hello world\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\n\nTesting Jupyter\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/test_jupyter/test_jupyter.html",
+    "href": "posts/test_jupyter/test_jupyter.html",
+    "title": "Testing Jupyter",
+    "section": "",
+    "text": "Code\nimport altair as alt\nfrom vega_datasets import data\nsource = data.iowa_electricity()\nalt.Chart(source).mark_area(opacity=0.3).encode(\n  x=\"year:T\",\n  y=alt.Y(\"net_generation:Q\").stack(None),\n  color=\"source:N\"\n)"
   }
 ]
