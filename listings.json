@@ -2,7 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/hello_world/index.html"
+      "/posts/hello_world/index.html",
+      "/posts/test_jupyter/test_jupyter.html"
     ]
   }
 ]
