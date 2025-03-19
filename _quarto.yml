@@ -1,5 +1,5 @@
 project:
-  title: "Siegfried Gessulat's blog"
+  title: "Home"
   type: website
 
 website:
@@ -10,11 +10,9 @@ website:
         href: https://github.com/gessulat
 format:
   html:
-    theme: zephyr
+    theme: flatly
     css: styles.css
-
-execute:
-  freeze: auto
+    mainfont: "IM Fell DW Pica"
 
 
 

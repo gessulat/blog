@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/example/example.html",
       "/posts/tufte_rangeplot/tufte_rangeplot.html"
     ]
   }
