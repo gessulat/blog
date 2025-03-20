@@ -1,0 +1,73 @@
+/*-- scss:defaults --*/
+
+// Use any base theme customization here if needed
+
+/*-- scss:rules --*/
+
+// Target Quarto's specific container structure
+#quarto-content {
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    // Target the quarto-container class
+    &.quarto-container {
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    // Target the main content area
+    main.content {
+        margin-left: 20px !important;
+        margin-right: 0 !important;
+        padding: 1rem !important;
+        padding-top: 5rem !important;
+        width: 600px !important;
+        max-width: 100% !important;
+    }
+}
+
+// Remove horizontal alignment from container classes
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+}
+
+// Ensure content within main stays within bounds
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Override any page-specific layouts
+.page-layout-article {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+// Handle fullcontent class that might affect layout
+body.fullcontent {
+    max-width: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    
+    #quarto-content {
+        display: block !important;
+    }
+} 
