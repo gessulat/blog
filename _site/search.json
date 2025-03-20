@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Example for development\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\n\nRangeplot in Altair\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Sidenotes for Quarto\n\n\n\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\n\n\n\n\n\nRangeplot in Altair\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/test_jupyter/test_jupyter.html",
@@ -47,5 +47,12 @@
     "title": "Example for development",
     "section": "",
     "text": "Edward Tufte suggests to visually indicate the location of the max and min values in a scatterplot with the lines that demark the x- and y-axis of the plot. He calls this a rangeplot.\nThis post shows how to create a such a plot in Altair 5\nFirst, we create a random dataset.\n\nimport numpy as np\nimport pandas as pd\n\ndf = pd.DataFrame({\n    'x': np.random.randn(100),\n    'y': np.random.randn(100),\n    'category': np.random.randint(0, 2, 100),\n    'intensity': np.random.rand(100)\n})"
+  },
+  {
+    "objectID": "posts/tufte_sidenote.html",
+    "href": "posts/tufte_sidenote.html",
+    "title": "Sidenotes for Quarto",
+    "section": "",
+    "text": "In his books Edward Tufte heavily annotates his text with sidenotes at the margin. I enjoy this style of writing very much. Markdown and Quarto don’t have a native way to support sidenotes, so let’s try to implement that!\nFastHTML is a new Python library from Answer.AI that makes it easy to generate blocks of HTML. Below is an example that builds a group of html tags that match well to Tufte CSS by Dave Liepmann.\n\nfrom fasthtml.common import Label, Input, Span, FT\nfrom fasthtml.common import *\n\ndef sidenote(ct, _id=None):\n    _id = _id or f\"sn{str(hash(str(ct)))[:6]}\"\n    c = (\n        Label(cls='margin-toggle sidenote-number', **{'for': _id}),\n        Input(type='checkbox', id=_id, cls='margin-toggle'),\n        Span(*ct, cls='sidenote')\n    )\n    return \"\".join(x.__html__() for x in c)\n\nprint(sidenote('i am a sidenote'))\n\n&lt;label for=\"sn-36715\" class=\"margin-toggle sidenote-number\"&gt;&lt;/label&gt;&lt;input type=\"checkbox\" id=\"sn-36715\" class=\"margin-toggle\" name=\"sn-36715\"&gt;\n&lt;span class=\"sidenote\"&gt;i am a sidenote&lt;/span&gt;\n\n\nHow can we use this function now inside our Markdown blog? Quarto can render function, but the way Claude recommended was not particularly convenient. What we can do instead is to generate a full html string and output that. We need to prepend the code cell that uses this with\n#| echo: true\n#| output: asis\n\ndef html(md):\n    _html = \"{=html}\"\n    print(f\"\"\"```{_html}\\n{md}```\"\"\")\n\nhtml(f\"\"\"\nThis is a second test for a sidenote{sidenote('I am the walrus!')}.\n\nNext paragraph\n\"\"\")\n\nThis is a second test for a sidenote\nI am the walrus!.\n\nNext paragraph"
   }
 ]
