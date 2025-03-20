@@ -22,12 +22,31 @@ body {
     counter-reset: sidenote-counter;
 }
 
+main {
+    font-size: 1.2rem;
+}
+
+/* Code styling */
+code,
+pre code,
+div.sourceCode code,
+div.sourceCode pre code,
+p > code,
+li > code {
+    font-size: 0.8rem !important;
+}
+
+.cell-output code {
+    font-size: 0.8rem !important;
+}
+
 .sidenote,
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -60%;
-    width: 50%;
+    margin-right: -270px;
+    width: 250px;
+    max-width: 250px;
     margin-top: .3rem;
     margin-bottom: 0;
     font-size: 1.1rem;
@@ -63,8 +82,9 @@ body {
 
 blockquote .sidenote,
 blockquote .marginnote {
-    margin-right: -82%;
-    min-width: 59%;
+    margin-right: -270px;
+    width: 250px;
+    max-width: 250px;
     text-align: left;
 }
 
@@ -87,8 +107,8 @@ label.margin-toggle:not(.sidenote-number) {
     display: none;
 }
 
-/* Mobile styles for sidenotes */
-@media(max-width: 760px) {
+/* Mobile styles for sidenotes - trigger when main content + sidenote width + some padding won't fit */
+@media(max-width: 900px) {
     .sidenote,
     .marginnote {
         display: none;
@@ -97,13 +117,13 @@ label.margin-toggle:not(.sidenote-number) {
     .margin-toggle:checked+.sidenote,
     .margin-toggle:checked+.marginnote {
         display: block;
-        float: left;
-        left: 1rem;
+        float: none;
+        left: 0;
         clear: both;
-        width: 95%;
-        margin: 1rem 2.5%;
-        vertical-align: baseline;
+        width: 100%;
+        max-width: none;
         position: relative;
+        padding: 1rem;
     }
 
     label {

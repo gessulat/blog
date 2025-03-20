@@ -179,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In his books Edward Tufte heavily annotates his text with sidenotes at the margin. I enjoy this style of writing very much. Markdown and Quarto don’t have a native way to support sidenotes, so let’s try to implement that!</p>
+<p>In his books Edward Tufte heavily annotates his text with sidenotes at the margin. I enjoy this style of writing very much. Markdown and Quarto don’t have a native way to support sidenotes, so let’s try to implement it!</p>
 <p><a href="https://fastht.ml/docs/">FastHTML</a> is a new Python library from <a href="https://www.answer.ai/">Answer.AI</a> that makes it easy to generate blocks of HTML. Below is an example that builds a group of html tags that match well to <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a> by Dave Liepmann.</p>
 <div id="7ac71a2f-5579-440b-a68c-694b3ddc750a" class="cell" data-execution_count="91">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> fasthtml.common <span class="im">import</span> Label, Input, Span, FT</span>
@@ -200,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 &lt;span class="sidenote"&gt;i am a sidenote&lt;/span&gt;</code></pre>
 </div>
 </div>
-<p>How can we use this function now inside our Markdown blog? Quarto can render function, but the way Claude recommended was not particularly convenient. What we can do instead is to generate a full html string and output that. We need to prepend the code cell that uses this with</p>
+<p>How can we use this function now inside our Markdown blog? Quarto can render functions but the way Claude recommended was not particularly convenient. What we can do instead is to generate a full html string and output that <code>asis</code> - this will be rendered nicely by Quarto. We need to prepend the code cell that uses this with the following so that Quarto understands what we want.</p>
 <pre><code>#| echo: true
 #| output: asis</code></pre>
 <div id="5aa58af9-875e-456f-8ddc-4989cf994feb" class="cell" data-execution_count="92">
@@ -215,7 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ss">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ss">This is a second test for a sidenote</span><span class="sc">{</span>sidenote(<span class="st">'I am the walrus!'</span>)<span class="sc">}</span><span class="ss">.</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ss">This is a second test for a sidenote.</span><span class="sc">{</span>sidenote(<span class="st">'I am the postman! I am the walrus! I am the sidenote! Ta da da da.'</span>)<span class="sc">}</span></span>
 <span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ss">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </span></span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ss">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span></span>
@@ -230,8 +230,8 @@ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
-This is a second test for a sidenote<label for="sn-36677" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-36677" class="margin-toggle" name="sn-36677">
-<span class="sidenote">I am the walrus!</span>.
+This is a second test for a sidenote.<label for="sn373670" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn373670" class="margin-toggle" name="sn373670">
+<span class="sidenote">I am the postman! I am the walrus! I am the sidenote! Ta da da da.</span>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
