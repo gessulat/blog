@@ -10,10 +10,13 @@ website:
         href: https://github.com/gessulat
 format:
   html:
-    theme: 
-      - custom.scss
+    grid:
+      margin-width: 800px
+      body-width: 800px
     css: styles.css
     mainfont: "IM Fell DW Pica"
+    main-color: #008080
+    smooth-scroll: true
 
 
 
