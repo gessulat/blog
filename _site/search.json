@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Google Scholar Profile"
+    "text": "Resume\nGoogle Scholar Profile"
   },
   {
     "objectID": "about.html#publications",
     "href": "about.html#publications",
     "title": "About",
-    "section": "",
-    "text": "Google Scholar Profile"
+    "section": "Publications",
+    "text": "Publications\nGoogle Scholar Profile"
   },
   {
     "objectID": "posts/tufte_rangeplot/tufte_rangeplot.html",
@@ -33,5 +33,12 @@
     "title": "Home",
     "section": "",
     "text": "Sidenotes for Quarto\n\n\n\n\n\n\n\n\n\n\n\nMar 19, 2025\n\n\n\n\n\n\n\nRangeplot in Altair\n\n\n\n\n\n\n\n\n\n\n\nFeb 7, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html#resume",
+    "href": "about.html#resume",
+    "title": "About",
+    "section": "",
+    "text": "Resume"
   }
 ]
