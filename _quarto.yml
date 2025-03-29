@@ -5,9 +5,10 @@ project:
 website:
   navbar:
     right:
-      - about.qmd
       - icon: github
         href: https://github.com/gessulat
+      - text: Resume
+        href: https://resume.gessulat.io
 format:
   html:
     grid:
