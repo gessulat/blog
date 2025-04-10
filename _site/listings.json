@@ -3,7 +3,8 @@
     "listing": "/index.html",
     "items": [
       "/posts/tufte_sidenote.html",
-      "/posts/tufte_rangeplot/tufte_rangeplot.html"
+      "/posts/tufte_rangeplot/tufte_rangeplot.html",
+      "/posts/daylight_hours.html"
     ]
   }
 ]
