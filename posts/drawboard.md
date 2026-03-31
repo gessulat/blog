@@ -40,3 +40,5 @@ The URL sharing does more work than it looks:
 A detailed drawing fits in a link short enough that Slack doesn't complain about it. The title comes along too, packed into the hash as a slug.
 
 **[Try it and see a cute octopus! →](https://gessulat.github.io/drawboard/#ocotopus~T2NvdG9wdXM=~FdA_axNhGADw53mf9_9799717s3d9ZpcYoIJlrQhNg7SP0FwEYpmcqoFXVykdvEbOIpjERUREQdx6uQozg4ifgpREMkgHUS6_D7AD4Gi3_JMGqdKvKHdetKAz2zN1vMhMaDwXP2RAiFP0UbMC65AOSAJTClGwkrkQJohMgvkn-h_UpAZwNyvBRfA6yjytWygLdKVDCh5ppcScs11TYAEioNgwoBGBGdTJKT6rTxV-a5Yw3kxrbpFK8R9V4kaF9CTmT6YzYZNk1aygsY1LirTSTbghiMl7-SpmsCIX4m2w0a11R_1ru7tXLo5-ozTsdgEL5C63-RXxT_i8KFfqUtNFg4OoWOnXBSwH8bp0exob2d4vJ9m3da13e3JL3yB884FbIn3CD19p7sFiUTCp2KJjOIT-UMJiPXdw4uzzmXTxnbIr9_vj8aD2wNG-qV-pQPUdrOd-cVC3TIbRP67-cuxY5NM9FGyNOgCvJCxnEAcgyJyJ-YnFcAjLEwqeHLeXXIVIZF8Yz6xCNCXDA0XRGppvpAFzpklHgPkROaxe80CRAF0bBUoA6sSiewHsUQtCrABPPGEO4OrnPIKzsSSzL0Hj4575_wH)**
+
+![](octopus.svg){width=200}
