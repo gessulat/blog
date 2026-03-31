@@ -1,1 +1,1 @@
-Sitemap: https://gessulat.github.io/blog/sitemap.xml
+Sitemap: https://blog.gessulat.io/sitemap.xml

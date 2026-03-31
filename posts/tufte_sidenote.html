@@ -321,7 +321,7 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/gessulat\.github\.io\/blog\/");
+        var filterRegex = new RegExp("https:\/\/blog\.gessulat\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
