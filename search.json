@@ -60,6 +60,6 @@
     "href": "posts/drawboard.html#under-the-hood",
     "title": "Drawboard",
     "section": "Under the hood",
-    "text": "Under the hood\nThe URL sharing does more work than it looks:\n\nStrokes get simplified using Ramer-Douglas-Peucker to shed redundant points\nCoordinates are delta-encoded — differences between points, not absolute positions\nSigned deltas get zigzag-encoded into compact unsigned varints\nEverything is deflate-compressed via the browser’s native CompressionStream API\nThe result is base64url-encoded into the URL hash\n\nA detailed drawing fits in a link short enough that Slack doesn’t complain about it. The title comes along too, packed into the hash as a slug.\n\n\n\nOctopus drawn with Drawboard\n\n\nTry it →"
+    "text": "Under the hood\nThe URL sharing does more work than it looks:\n\nStrokes get simplified using Ramer-Douglas-Peucker to shed redundant points\nCoordinates are delta-encoded — differences between points, not absolute positions\nSigned deltas get zigzag-encoded into compact unsigned varints\nEverything is deflate-compressed via the browser’s native CompressionStream API\nThe result is base64url-encoded into the URL hash\n\nA detailed drawing fits in a link short enough that Slack doesn’t complain about it. The title comes along too, packed into the hash as a slug.\nTry it and see a cute octopus! →"
   }
 ]
