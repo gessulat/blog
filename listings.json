@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/drawboard.html",
       "/posts/tufte_sidenote.html",
       "/posts/tufte_rangeplot/tufte_rangeplot.html",
       "/posts/daylight_hours.html"

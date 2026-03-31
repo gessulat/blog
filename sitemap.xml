@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://gessulat.github.io/blog/posts/daylight_hours.html</loc>
-    <lastmod>2025-04-10T09:52:31.980Z</lastmod>
+    <loc>https://gessulat.github.io/blog/posts/tufte_sidenote.html</loc>
+    <lastmod>2026-03-31T08:32:53.660Z</lastmod>
   </url>
   <url>
-    <loc>https://gessulat.github.io/blog/posts/tufte_sidenote.html</loc>
-    <lastmod>2025-04-10T09:52:31.980Z</lastmod>
+    <loc>https://gessulat.github.io/blog/posts/daylight_hours.html</loc>
+    <lastmod>2026-03-31T08:32:53.659Z</lastmod>
   </url>
   <url>
     <loc>https://gessulat.github.io/blog/index.html</loc>
-    <lastmod>2025-04-10T09:52:31.979Z</lastmod>
+    <lastmod>2026-03-31T08:32:53.657Z</lastmod>
   </url>
   <url>
     <loc>https://gessulat.github.io/blog/about.html</loc>
-    <lastmod>2025-04-10T09:52:31.979Z</lastmod>
+    <lastmod>2026-03-31T08:32:53.657Z</lastmod>
   </url>
   <url>
     <loc>https://gessulat.github.io/blog/posts/tufte_rangeplot/tufte_rangeplot.html</loc>
-    <lastmod>2025-04-10T09:52:31.980Z</lastmod>
+    <lastmod>2026-03-31T08:32:53.660Z</lastmod>
+  </url>
+  <url>
+    <loc>https://gessulat.github.io/blog/posts/drawboard.html</loc>
+    <lastmod>2026-03-31T08:32:53.659Z</lastmod>
   </url>
 </urlset>
