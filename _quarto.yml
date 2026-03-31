@@ -1,6 +1,8 @@
 project:
   title: "Home"
   type: website
+  resources:
+    - CNAME
 
 website:
   navbar:

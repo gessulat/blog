@@ -39,4 +39,6 @@ The URL sharing does more work than it looks:
 
 A detailed drawing fits in a link short enough that Slack doesn't complain about it. The title comes along too, packed into the hash as a slug.
 
+![Octopus drawn with Drawboard](octopus.svg)
+
 **[Try it →](https://gessulat.github.io/drawboard)**
